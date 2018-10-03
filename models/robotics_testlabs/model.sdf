@@ -9,251 +9,114 @@
         <include>
             <uri>model://robotics_testlabs/blue_door_right</uri>
             <name>door2</name>
-            <pose>
-                <x>1.31</x>
-                <y>5.585</y>
-                <z>0</z>
-                <Z>-1.5707963267948966</Z>
-            </pose>
+            <pose>1.31 5.585 0 0 0 -1.5707963267948966</pose>
             <push_start_waypoint>door_opening_right_start</push_start_waypoint>
             <push_destination_waypoint>door_opening_right_dest</push_destination_waypoint>
         </include>
         <include>
             <uri>model://floor</uri>
             <name>floor</name>
-            <pose>
-                <x>0</x>
-                <y>0</y>
-                <z>0</z>
-            </pose>
+            <pose>0 0 0 0 0 0</pose>
         </include>
         <include>
             <uri>model://robotics_testlabs/plant</uri>
             <name>plant</name>
-            <pose>
-                <x>3.26</x>
-                <y>5.19</y>
-                <z>0</z>
-            </pose>
+            <pose>3.26 5.19 0 0 0 0</pose>
         </include>
         <include>
             <uri>model://trashbin</uri>
             <name>trashbin</name>
-            <pose>
-                <x>3</x>
-                <y>3.6</y>
-                <z>0</z>
-            </pose>
+            <pose>3 3.6 0 0 0 0</pose>
         </include>
         <include>
             <uri>model://robotics_testlabs/flight_case</uri>
             <name>flight_case</name>
-            <pose>
-                <x>-3.28</x>
-                <y>1.23</y>
-                <z>0</z>
-            </pose>
+            <pose>-3.28 1.23 0 0 0 0</pose>
         </include>
         <include>
             <uri>model://robotics_testlabs/battery_table</uri>
             <name>battery_table</name>
-            <pose>
-                <x>-3.36</x>
-                <y>1.99</y>
-                <z>0</z>
-            </pose>
+            <pose>-3.36 1.99 0 0 0 0</pose>
         </include>
         <include>
             <uri>model://ddw/salon</uri>
             <name>couch_table</name>
-            <pose>
-                <x>3.34</x>
-                <y>1.5</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>3.14159265359</Z>
-            </pose>
+            <pose>3.34 1.5 0 0 0 3.14159265359</pose>
         </include>
         <include>
             <uri>model://robotics_testlab_B/black_cabinet</uri>
             <name>black_cabinet1</name>
-            <pose>
-                <x>2.98</x>
-                <y>-1.42</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>1.5707963267948966</Z>
-            </pose>
+            <pose>2.98 -1.42 0 0 0 1.5707963267948966</pose>
         </include>
         <include>
             <uri>model://robotics_testlab_B/black_cabinet</uri>
             <name>black_cabinet2</name>
-            <pose>
-                <x>2.06</x>
-                <y>-1.42</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>1.5707963267948966</Z>
-            </pose>
+            <pose>2.06 -1.42 0 0 0 1.5707963267948966</pose>
         </include>
         <include>
             <uri>model://robotics_testlab_B/black_cabinet</uri>
             <name>black_cabinet3</name>
-            <pose>
-                <x>1.14</x>
-                <y>-1.42</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>1.5707963267948966</Z>
-            </pose>
+            <pose>1.14 -1.42 0 0 0 1.5707963267948966</pose>
         </include>
         <include>
             <uri>model://robotics_testlab_B/black_cabinet</uri>
             <name>black_cabinet4</name>
-            <pose>
-                <x>0.22</x>
-                <y>-1.42</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>1.5707963267948966</Z>
-            </pose>
+            <pose>0.22 -1.42 0 0 0 1.5707963267948966</pose>
         </include>
         <include>
             <uri>model://robotics_testlab_B/black_cabinet</uri>
             <name>black_cabinet5</name>
-            <pose>
-                <x>-0.92</x>
-                <y>-1.42</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>1.5707963267948966</Z>
-            </pose>
+            <pose>-0.92 -1.42 0 0 0 1.5707963267948966</pose>
         </include>
         <include>
             <uri>model://ddw/table</uri>
             <name>bar</name>
-            <pose>
-                <x>2.65</x>
-                <y>0.3</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>1.5707963267948966</Z>
-            </pose>
+            <pose>2.65 0.3 0 0 0 1.5707963267948966</pose>
         </include>
         <include>
             <uri>model://ddw/couch</uri>
             <name>hallway_table</name>
-            <pose>
-                <x>0.72</x>
-                <y>3.45</y>
-                <z>0.02</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>1.5707963267948966</Z>
-            </pose>
+            <pose>0.72 3.45 0.02 0 0 1.5707963267948966</pose>
         </include>
         <include>
             <uri>model://robotics_testlab_B/corrnameor_cabinet</uri>
             <name>cabinet</name>
-            <pose>
-                <x>3.3</x>
-                <y>4.35</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>3.14159265359</Z>
-            </pose>
+            <pose>3.3 4.35 0 0 0 3.14159265359</pose>
         </include>
         <include>
             <uri>model://ddw/chair</uri>
             <name>chair</name>
-            <pose>
-                <x>2</x>
-                <y>5.3</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>-1.5707963267948966</Z>
-            </pose>
+            <pose>2 5.3 0 0 0 -1.5707963267948966</pose>
         </include>
         <include>
             <uri>model://robotics_testlab_B/bed_cabinet</uri>
             <name>nightstand</name>
-            <pose>
-                <x>-1.92</x>
-                <y>-1.42</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>1.5707963267948966</Z>
-            </pose>
+            <pose>-1.92 -1.42 0 0 0 1.5707963267948966</pose>
         </include>
         <include>
             <uri>model://robotics_testlab_B/bed</uri>
             <name>bed</name>
-            <pose>
-                <x>-2.725</x>
-                <y>-0.52</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>1.5707963267948966</Z>
-            </pose>
+            <pose>-2.725 -0.52 0 0 0 1.5707963267948966</pose>
         </include>
         <include>
             <uri>model://robotics_testlab_B/tubing</uri>
             <name>tubing</name>
-            <pose>
-                <x>-3.4</x>
-                <y>-0.34</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>1.5707963267948966</Z>
-            </pose>
+            <pose>-3.4 -0.34 0 0 0 1.5707963267948966</pose>
         </include>
         <include>
             <uri>model://table_120x80x76</uri>
             <name>operator_table</name>
-            <pose>
-                <x>-1.91</x>
-                <y>4.05</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>0</Z>
-            </pose>
+            <pose>-1.91 4.05 0 0 0 0</pose>
         </include>
         <include>
             <uri>model://table_120x80x76</uri>
             <name>operator_table2</name>
-            <pose>
-                <x>-3.11</x>
-                <y>4.05</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>0</Z>
-            </pose>
+            <pose>-3.11  4.05 0 0 0 0</pose>
         </include>
         <include>
             <uri>model://table_120x80x76</uri>
             <name>dinner_table</name>
-            <pose>
-                <x>0.4</x>
-                <y>1.92</y>
-                <z>0</z>
-                <X>0</X>
-                <Y>0</Y>
-                <Z>0</Z>
-            </pose>
+            <pose>0.4 1.92 0 0 0 0</pose>
         </include>
         <include>
             <uri>model://table_120x80x76</uri>
