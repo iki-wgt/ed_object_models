@@ -197,7 +197,6 @@
             <uri>model://waypoint</uri>
             <name>registration_table2</name>
             <pose>2 1.5 0 0 0 3.141592</pose>
-            </pose>
         </include>
         <include>
             <uri>model://waypoint</uri>
@@ -218,7 +217,6 @@
             <uri>model://waypoint</uri>
             <name>exit_3_rips</name>
             <pose>-1.48 -0.031 0 0 0 3.141592</pose>
-            </pose>
         </include>
         <include>
             <uri>model://waypoint</uri>
