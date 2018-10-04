@@ -286,7 +286,7 @@
             <pose>2.2 4.5 0 0 0 0</pose>
             <areas>
                 <name>in</name>
-                <shape>
+                <geometry>
                     <box>
                         <min>
                             <x>-0.4</x>
@@ -299,7 +299,7 @@
                             <z>0</z>
                         </max>
                     </box>
-                </shape>
+                </geometry>
             </areas>
         </include>
         <include>
@@ -308,7 +308,7 @@
             <pose>-2 -0.5 0 0 0 0</pose>
             <areas>
                 <name>in</name>
-                <shape>
+                <geometry>
                     <box>
                         <min>
                             <x>-0.2</x>
@@ -321,7 +321,7 @@
                             <z>0</z>
                         </max>
                     </box>
-                </shape>
+                </geometry>
             </areas>
         </include>
         <include>
@@ -330,7 +330,7 @@
             <pose>-2 3 0 0 0 0</pose>
             <areas>
                 <name>in</name>
-                <shape>
+                <geometry>
                     <box>
                         <min>
                             <x>-0.8</x>
@@ -343,7 +343,7 @@
                             <z>0</z>
                         </max>
                     </box>
-                </shape>
+                </geometry>
             </areas>
         </include>
         <include>
@@ -352,7 +352,7 @@
             <pose>0 4.5 0 0 0 0</pose>
             <areas>
                 <name>in</name>
-                <shape>
+                <geometry>
                     <box>
                         <min>
                             <x>-0.5</x>
@@ -365,7 +365,7 @@
                             <z>0</z>
                         </max>
                     </box>
-                </shape>
+                </geometry>
             </areas>
         </include>
     </world>
