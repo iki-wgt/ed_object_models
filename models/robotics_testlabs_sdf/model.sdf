@@ -261,11 +261,7 @@
         <include>
             <uri>model://room</uri>
             <name>livingroom</name>
-            <pose>
-                <x>1.5</x>
-                <y>1</y>
-                <z>0</z>
-            </pose>
+            <pose>1.5 1 0 0 0 0</pose>
             <areas>
                 <name>in</name>
                 <shape>
@@ -287,11 +283,7 @@
         <include>
             <uri>model://room</uri>
             <name>kitchen</name>
-            <pose>
-                <x>2.2</x>
-                <y>4.5</y>
-                <z>0</z>
-            </pose>
+            <pose>2.2 4.5 0 0 0 0</pose>
             <areas>
                 <name>in</name>
                 <shape>
@@ -313,11 +305,7 @@
         <include>
             <uri>model://room</uri>
             <name>bedroom</name>
-            <pose>
-                <x>-2</x>
-                <y>-0.5</y>
-                <z>0</z>
-            </pose>
+            <pose>-2 -0.5 0 0 0 0</pose>
             <areas>
                 <name>in</name>
                 <shape>
@@ -339,11 +327,7 @@
         <include>
             <uri>model://room</uri>
             <name>workshop</name>
-            <pose>
-                <x>-2</x>
-                <y>3</y>
-                <z>0</z>
-            </pose>
+            <pose>-2 3 0 0 0 0</pose>
             <areas>
                 <name>in</name>
                 <shape>
@@ -365,11 +349,7 @@
         <include>
             <uri>model://room</uri>
             <name>hallway</name>
-            <pose>
-                <x>0</x>
-                <y>4.5</y>
-                <z>0</z>
-            </pose>
+            <pose>0 4.5 0 0 0 0</pose>
             <areas>
                 <name>in</name>
                 <shape>
