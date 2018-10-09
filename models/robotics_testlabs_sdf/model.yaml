@@ -90,7 +90,7 @@ sdf:
    - 
     uri: "model://table_120x80x76"
     name: operator_table2
-    pose: "-3.11  4.05 0 0 0 0"
+    pose: "-3.11 4.05 0 0 0 0"
    - 
     uri: "model://table_120x80x76"
     name: dinner_table
