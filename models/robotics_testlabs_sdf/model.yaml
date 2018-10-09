@@ -2,213 +2,213 @@ sdf:
  world: 
   include: 
    - 
-   uri: "model://robotics_testlabs/walls"
+    uri: "model://robotics_testlabs/walls"
     name: walls
     pose: "0 0 0 0 0 0"
    - 
-   uri: "model://robotics_testlabs/blue_door_right"
+    uri: "model://robotics_testlabs/blue_door_right"
     name: door2
     pose: "1.31 5.585 0 0 0 -1.5707963267948966"
     push_start_waypoint: door_opening_right_start
     push_destination_waypoint: door_opening_right_dest
    - 
-   uri: "model://floor"
+    uri: "model://floor"
     name: floor
     pose: "0 0 0 0 0 0"
    - 
-   uri: "model://robotics_testlabs/plant"
+    uri: "model://robotics_testlabs/plant"
     name: plant
     pose: "3.26 5.19 0 0 0 0"
    - 
-   uri: "model://trashbin"
+    uri: "model://trashbin"
     name: trashbin
     pose: "3 3.6 0 0 0 0"
    - 
-   uri: "model://robotics_testlabs/flight_case"
+    uri: "model://robotics_testlabs/flight_case"
     name: flight_case
     pose: "-3.28 1.23 0 0 0 0"
    - 
-   uri: "model://robotics_testlabs/battery_table"
+    uri: "model://robotics_testlabs/battery_table"
     name: battery_table
     pose: "-3.36 1.99 0 0 0 0"
    - 
-   uri: "model://ddw/salon"
+    uri: "model://ddw/salon"
     name: couch_table
     pose: "3.34 1.5 0 0 0 3.14159265359"
    - 
-   uri: "model://robotics_testlab_B/black_cabinet"
+    uri: "model://robotics_testlab_B/black_cabinet"
     name: black_cabinet1
     pose: "2.98 -1.42 0 0 0 1.5707963267948966"
    - 
-   uri: "model://robotics_testlab_B/black_cabinet"
+    uri: "model://robotics_testlab_B/black_cabinet"
     name: black_cabinet2
     pose: "2.06 -1.42 0 0 0 1.5707963267948966"
    - 
-   uri: "model://robotics_testlab_B/black_cabinet"
+    uri: "model://robotics_testlab_B/black_cabinet"
     name: black_cabinet3
     pose: "1.14 -1.42 0 0 0 1.5707963267948966"
    - 
-   uri: "model://robotics_testlab_B/black_cabinet"
+    uri: "model://robotics_testlab_B/black_cabinet"
     name: black_cabinet4
     pose: "0.22 -1.42 0 0 0 1.5707963267948966"
    - 
-   uri: "model://robotics_testlab_B/black_cabinet"
+    uri: "model://robotics_testlab_B/black_cabinet"
     name: black_cabinet5
     pose: "-0.92 -1.42 0 0 0 1.5707963267948966"
    - 
-   uri: "model://ddw/table"
+    uri: "model://ddw/table"
     name: bar
     pose: "2.65 0.3 0 0 0 1.5707963267948966"
    - 
-   uri: "model://ddw/couch"
+    uri: "model://ddw/couch"
     name: hallway_table
     pose: "0.72 3.45 0.02 0 0 1.5707963267948966"
    - 
-   uri: "model://robotics_testlab_B/corrnameor_cabinet"
+    uri: "model://robotics_testlab_B/corridor_cabinet"
     name: cabinet
     pose: "3.3 4.35 0 0 0 3.14159265359"
    - 
-   uri: "model://ddw/chair"
+    uri: "model://ddw/chair"
     name: chair
     pose: "2 5.3 0 0 0 -1.5707963267948966"
    - 
-   uri: "model://robotics_testlab_B/bed_cabinet"
+    uri: "model://robotics_testlab_B/bed_cabinet"
     name: nightstand
     pose: "-1.92 -1.42 0 0 0 1.5707963267948966"
    - 
-   uri: "model://robotics_testlab_B/bed"
+    uri: "model://robotics_testlab_B/bed"
     name: bed
     pose: "-2.725 -0.52 0 0 0 1.5707963267948966"
    - 
-   uri: "model://robotics_testlab_B/tubing"
+    uri: "model://robotics_testlab_B/tubing"
     name: tubing
     pose: "-3.4 -0.34 0 0 0 1.5707963267948966"
    - 
-   uri: "model://table_120x80x76"
+    uri: "model://table_120x80x76"
     name: operator_table
     pose: "-1.91 4.05 0 0 0 0"
    - 
-   uri: "model://table_120x80x76"
+    uri: "model://table_120x80x76"
     name: operator_table2
     pose: "-3.11  4.05 0 0 0 0"
    - 
-   uri: "model://table_120x80x76"
+    uri: "model://table_120x80x76"
     name: dinner_table
     pose: "0.4 1.92 0 0 0 0"
    - 
-   uri: "model://table_120x80x76"
+    uri: "model://table_120x80x76"
     name: workbench
     pose: "-2.31 3.23 0 0 0 0"
    - 
-   uri: "model://table_120x80x76"
+    uri: "model://table_120x80x76"
     name: workbench2
     pose: "-3.31 3.03 0 0 0 1.5707963267948966"
    - 
-   uri: "model://robotics_testlabs/plastic_cabinet"
+    uri: "model://robotics_testlabs/plastic_cabinet"
     name: bookcase
     pose: "3.24 2.713 0 0 0 3.141592"
    - 
-   uri: "model://robotics_testlabs/electro_bar_1"
+    uri: "model://robotics_testlabs/electro_bar_1"
     name: electro_bar_1
     pose: "-3.72 2.96 0.94 0 0 0"
    - 
-   uri: "model://robotics_testlabs/electro_bar_2"
+    uri: "model://robotics_testlabs/electro_bar_2"
     name: electro_bar_2
     pose: "3.5 2.96 0.94 0 0 0"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: corridor
     pose: "2.7 5 0 0 0 0"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: hallway
     pose: "0 5.5 0 0 0 0"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: bedroom
     pose: "-2 -1 0 0 0 0"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: battery_point
     pose: "-2.8 2 0 0 0 0"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: initial_pose
     pose: "0.568 4.259 0 0 0 0"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: bookcase_waypoint
     pose: "2.58 2.66 0 0 0 0"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: entry_point
     pose: "1.897 4.295 0 0 0 0"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: exit
     pose: "-1.48 -0.031 0 0 0 3.141592"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: exit_pre
     pose: "0 0 0 0 0 3.141592"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: registration_table1
     pose: "2 1.5 0 0 0 3.141592"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: registration_table2
     pose: "2 1.5 0 0 0 3.141592"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: registration_table3
     pose: "2 1.5 0 0 0 3.141592"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: exit_1_rips
     pose: "-1.48 -0.031 0 0 0 3.141592"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: exit_2_rips
     pose: "-1.48 -0.031 0 0 0 3.141592"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: exit_3_rips
     pose: "-1.48 -0.031 0 0 0 3.141592"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: exit_4_rips
     pose: "-1.48 -0.031 0 0 0 3.141592"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: door_navigation
     pose: "-0.168 6.216 0 0 0 1.5708"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: door_opening_right_dest
     pose: "0.862 6.216 0 0 0 1.5708"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: door_opening_left_start
     pose: "-0.168 4.8 0 0 0 1.5708"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: door_opening_right_start
     pose: "0.862 4.8 0 0 0 1.5708"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: help_me_carry_starting_point
     pose: "1.65 2 0 0 0 1.5708"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: gpsr_meeting_point
     pose: "2.2 1.5 0 0 0 3.141592"
    - 
-   uri: "model://waypoint"
+    uri: "model://waypoint"
     name: operator_pose
     pose: "0 0 0 0 0 0"
    - 
-   uri: "model://room"
+    uri: "model://room"
     name: livingroom
     pose: "1.5 1 0 0 0 0"
     areas: 
@@ -224,7 +224,7 @@ sdf:
         y: "1.7"
         z: 0
    - 
-   uri: "model://room"
+    uri: "model://room"
     name: kitchen
     pose: "2.2 4.5 0 0 0 0"
     areas: 
@@ -240,7 +240,7 @@ sdf:
         y: "0.5"
         z: 0
    - 
-   uri: "model://room"
+    uri: "model://room"
     name: bedroom
     pose: "-2 -0.5 0 0 0 0"
     areas: 
@@ -256,7 +256,7 @@ sdf:
         y: "0.7"
         z: 0
    - 
-   uri: "model://room"
+    uri: "model://room"
     name: workshop
     pose: "-2 3 0 0 0 0"
     areas: 
@@ -272,7 +272,7 @@ sdf:
         y: 2
         z: 0
    - 
-   uri: "model://room"
+    uri: "model://room"
     name: hallway
     pose: "0 4.5 0 0 0 0"
     areas: 
