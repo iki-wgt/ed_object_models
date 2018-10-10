@@ -8,7 +8,7 @@ function ed_object_models_setup {
         export GAZEBO_MODEL_PATH=$model_path:$GAZEBO_MODEL_PATH
     fi
 
-    export GAZEBO_MODEL_PATH="$(find $model_path -name '.*' -prune -o -type d -printf '%p:')${GAZEBO_MODEL_PATH}"
+    export GAZEBO_MODEL_PATH="$(find $model_path -type f -name '*model.sdf' -printf '%h:')${GAZEBO_MODEL_PATH}"
 
 }
 
