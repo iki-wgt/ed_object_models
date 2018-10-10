@@ -36,7 +36,7 @@ if __name__ == "__main__":
             if abs(yaw) > 0.001:
                 print "  pose: {{ x: {}, y: {}, z: {}, Z: {:.3f} }}".format(e.pose.position.x, e.pose.position.y, e.pose.position.z, yaw)
             else:
-                print "  pose: {{ x: {}, y: {}, z: {} }}".format(e.pose.position.x, e.pose.position.y, e.pose.position.z + 1)
+                print "  pose: {{ x: {}, y: {}, z: {} }}".format(e.pose.position.x, e.pose.position.y, e.pose.position.z)
 
     except rospy.ServiceException, e:
         print "Service call failed: %s"%e
