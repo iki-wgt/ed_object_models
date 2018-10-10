@@ -28,7 +28,7 @@ sdf:
     name: flight_case
     pose: "-3.28 1.23 0 0 0 0"
    - 
-    uri: "model://robotics_testlabs/battery_table"
+    uri: "model://robotics_testlabs_sdf/battery_table"
     name: battery_table
     pose: "-3.36 1.99 0 0 0 0"
    - 
