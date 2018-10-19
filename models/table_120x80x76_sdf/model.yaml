@@ -1,0 +1,63 @@
+inherit: table
+sdf:
+  model:
+    link:
+      - name: table_top
+        pose: "0 0 0.75 0 0 0"
+        collision:        
+          geometry:
+            box:
+              size: "1.2 0.8 0.02"
+      - name: leg_1
+        pose: "-0.55 -0.35 0.37 0 0 0"
+        collision:        
+          geometry:
+            box:
+              size: "0.05 0.05 0.74"
+      - name: leg_2
+        pose: "0.55 -0.35 0.37 0 0 0"
+        collision:        
+          geometry:
+            box:
+              size: "0.05 0.05 0.74"
+      - name: leg_3
+        pose: "-0.55 0.35 0.37 0 0 0"
+        collision:        
+          geometry:
+            box:
+              size: "0.05 0.05 0.74"
+      - name: leg_4
+        pose: "0.55 0.35 0.37 0 0 0"
+        collision:        
+          - geometry:
+              box:
+                size: "0.05 0.05 0.74"
+          - pose: "4 4 0.75 0 0 0"
+            geometry:
+              cilinder:
+                radius: 0.2
+                length: 1.0
+
+color:
+    red: 0.8
+    green: 0.8
+    blue: 0.8
+
+areas:
+  - name: near
+    offset: 0.7
+  - name: in_front_of
+    shape:
+      - box:
+            min: { x:  0.6, y: -0.3, z: 0 }
+            max: { x:  1.2, y: 0.3, z: 0.01 }
+  - name: on_top_of
+    shape:
+      - box:
+            min: { x: -0.6, y: -0.4, z: 0.78 }
+            max: { x:  0.6, y:  0.4, z: 1.20 }
+  - name: under
+    shape:
+      - box:
+            min: { x: -0.54, y: -0.34, z: 0.01 }
+            max: { x:  0.54, y:  0.34, z: 0.5 }

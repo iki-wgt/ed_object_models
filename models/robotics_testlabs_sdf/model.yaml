@@ -84,23 +84,23 @@ sdf:
     name: tubing
     pose: "-3.4 -0.34 0 0 0 1.5707963267948966"
    - 
-    uri: "model://table_120x80x76"
+    uri: "model://table_120x80x76_sdf"
     name: operator_table
     pose: "-1.91 4.05 0 0 0 0"
    - 
-    uri: "model://table_120x80x76"
+    uri: "model://table_120x80x76_sdf"
     name: operator_table2
     pose: "-3.11 4.05 0 0 0 0"
    - 
-    uri: "model://table_120x80x76"
+    uri: "model://table_120x80x76_sdf"
     name: dinner_table
     pose: "0.4 1.92 0 0 0 0"
    - 
-    uri: "model://table_120x80x76"
+    uri: "model://table_120x80x76_sdf"
     name: workbench
     pose: "-2.31 3.23 0 0 0 0"
    - 
-    uri: "model://table_120x80x76"
+    uri: "model://table_120x80x76_sdf"
     name: workbench2
     pose: "-3.31 3.03 0 0 0 1.5707963267948966"
    - 
