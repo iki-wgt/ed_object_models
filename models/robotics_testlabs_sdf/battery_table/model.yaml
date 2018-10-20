@@ -2,17 +2,16 @@ sdf:
  model: 
   static: 1
   link: 
-   collision: 
-    pose: "0 0 0.35 0 0 0"
-    geometry: 
-     box: 
-      size: "0.55 0.8 0.7"
-   visual: 
-    pose: "0 0 0.35 0 0 0"
-    geometry: 
-     box: 
-      size: "0.55 0.8 0.7"
-  color: 
+   - collision:
+       pose: "0 0 0.35 0 0 0"
+       geometry:
+         box:
+           size: "0.55 0.8 0.7"
+   -  visual:
+      pose: "0 0 0.35 0 0 0"
+      geometry:
+        box:
+          size: "0.55 0.8 0.7"
    red: 0.4
    green: 0.3
    blue: 0.2
