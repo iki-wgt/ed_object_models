@@ -1,6 +1,6 @@
-inherit: table
 sdf:
   model:
+    inherit: table
     link:
       - name: table_top
         pose: "0 0 0.75 0 0 0"
@@ -53,26 +53,26 @@ sdf:
             box:
               size: "0.05 0.05 0.74"
 
-color:
-    red: 0.8
-    green: 0.8
-    blue: 0.8
+    color:
+      red: 0.8
+      green: 0.8
+      blue: 0.8
 
-areas:
-  - name: near
-    offset: 0.7
-  - name: in_front_of
-    shape:
-      - box:
-            min: { x:  0.6, y: -0.3, z: 0 }
-            max: { x:  1.2, y: 0.3, z: 0.01 }
-  - name: on_top_of
-    shape:
-      - box:
-            min: { x: -0.6, y: -0.4, z: 0.78 }
-            max: { x:  0.6, y:  0.4, z: 1.20 }
-  - name: under
-    shape:
-      - box:
-            min: { x: -0.54, y: -0.34, z: 0.01 }
-            max: { x:  0.54, y:  0.34, z: 0.5 }
+    areas:
+      - name: near
+        offset: 0.7
+      - name: in_front_of
+        shape:
+          - box:
+                min: { x:  0.6, y: -0.3, z: 0 }
+                max: { x:  1.2, y: 0.3, z: 0.01 }
+      - name: on_top_of
+        shape:
+          - box:
+                min: { x: -0.6, y: -0.4, z: 0.78 }
+                max: { x:  0.6, y:  0.4, z: 1.20 }
+      - name: under
+        shape:
+          - box:
+                min: { x: -0.54, y: -0.34, z: 0.01 }
+                max: { x:  0.54, y:  0.34, z: 0.5 }
