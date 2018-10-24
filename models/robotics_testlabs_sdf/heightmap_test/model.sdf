@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+    <model name="heightmap_test">
+        <static>true</static>
+        <link name="link">
+            <collision name="heightmap">
+                <geometry>
+                    <heightmap>
+                        <uri>model://heightmap_test/heightmap.png</uri>
+                        <!-- Should be a greyscale png of size 2^n+1 by 2^n+1 -->
+                        <size>10 10 1</size>
+                    </heightmap>
+                </geometry>
+            </collision>
+            <visual name="heightmap">
+                <geometry>
+                    <heightmap>
+                        <use_terrain_paging>false</use_terrain_paging>
+                        <texture>
+                            <diffuse>model://heightmap_test/grey.png</diffuse>
+                            <normal>model://heightmap_test/normal.png</normal>
+                            <size>1</size>
+                        </texture>
+                        <uri>model://heightmap_test/heightmap.png</uri>
+                        <!-- Same image as previous heightmap uri -->
+                        <size>10 10 1</size>
+                    </heightmap>
+                </geometry>
+            </visual>
+        </link>
+    </model>
+</sdf>
