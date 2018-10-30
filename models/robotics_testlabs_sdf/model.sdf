@@ -2,7 +2,7 @@
 <sdf version="1.6">
     <world name="robotics_testlabs">
         <include>
-            <uri>robotics_testlabs/walls</uri>
+            <uri>model://robotics_testlabs/walls</uri>
             <name>walls</name>
             <pose>0 0 0 0 0 0</pose>
         </include>
@@ -34,7 +34,7 @@
             <pose>-3.28 1.23 0 0 0 0</pose>
         </include>
         <include>
-            <uri>model://robotics_testlabs/battery_table</uri>
+            <uri>model://robotics_testlabs_sdf/battery_table</uri>
             <name>battery_table</name>
             <pose>-3.36 1.99 0 0 0 0</pose>
         </include>
@@ -79,7 +79,7 @@
             <pose>0.72 3.45 0.02 0 0 1.5707963267948966</pose>
         </include>
         <include>
-            <uri>model://robotics_testlab_B/corrnameor_cabinet</uri>
+            <uri>model://robotics_testlab_B/corridor_cabinet</uri>
             <name>cabinet</name>
             <pose>3.3 4.35 0 0 0 3.14159265359</pose>
         </include>
@@ -104,27 +104,27 @@
             <pose>-3.4 -0.34 0 0 0 1.5707963267948966</pose>
         </include>
         <include>
-            <uri>model://table_120x80x76</uri>
+            <uri>model://table_120x80x76_sdf</uri>
             <name>operator_table</name>
             <pose>-1.91 4.05 0 0 0 0</pose>
         </include>
         <include>
-            <uri>model://table_120x80x76</uri>
+            <uri>model://table_120x80x76_sdf</uri>
             <name>operator_table2</name>
-            <pose>-3.11  4.05 0 0 0 0</pose>
+            <pose>-3.11 4.05 0 0 0 0</pose>
         </include>
         <include>
-            <uri>model://table_120x80x76</uri>
+            <uri>model://table_120x80x76_sdf</uri>
             <name>dinner_table</name>
             <pose>0.4 1.92 0 0 0 0</pose>
         </include>
         <include>
-            <uri>model://table_120x80x76</uri>
+            <uri>model://table_120x80x76_sdf</uri>
             <name>workbench</name>
             <pose>-2.31 3.23 0 0 0 0</pose>
         </include>
         <include>
-            <uri>model://table_120x80x76</uri>
+            <uri>model://table_120x80x76_sdf</uri>
             <name>workbench2</name>
             <pose>-3.31 3.03 0 0 0 1.5707963267948966</pose>
         </include>
@@ -248,7 +248,7 @@
             <name>help_me_carry_starting_point</name>
             <pose>1.65 2 0 0 0 1.5708</pose>
         </include>
-                <include>
+        <include>
             <uri>model://waypoint</uri>
             <name>gpsr_meeting_point</name>
             <pose>2.2 1.5 0 0 0 3.141592</pose>
