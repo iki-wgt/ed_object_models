@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<sdf>
+    <model>
+        <inherit>table</inherit>
+        <link name="table_top">
+            <pose>0 0 0.75 0 0 0</pose>
+            <collision>
+                <geometry>
+                    <box>
+                        <size>1.2 0.8 0.02</size>
+                    </box>
+                </geometry>
+            </collision>
+            <visual>
+                <geometry>
+                    <box>
+                        <size>1.2 0.8 0.02</size>
+                    </box>
+                </geometry>
+            </visual>
+        </link>
+        <link name="leg_1">
+            <pose>-0.55 -0.35 0.37 0 0 0</pose>
+            <collision>
+                <geometry>
+                    <box>
+                        <size>0.05 0.05 0.74</size>
+                    </box>
+                </geometry>
+            </collision>
+            <visual>
+                <geometry>
+                    <box>
+                        <size>0.05 0.05 0.74</size>
+                    </box>
+                </geometry>
+            </visual>
+        </link>
+        <link name="leg_2">
+            <pose>0.55 -0.35 0.37 0 0 0</pose>
+            <collision>
+                <geometry>
+                    <box>
+                        <size>0.05 0.05 0.74</size>
+                    </box>
+                </geometry>
+            </collision>
+            <visual>
+                <geometry>
+                    <box>
+                        <size>0.05 0.05 0.74</size>
+                    </box>
+                </geometry>
+            </visual>
+        </link>
+        <link name="leg_3">
+            <pose>-0.55 0.35 0.37 0 0 0</pose>
+            <collision>
+                <geometry>
+                    <box>
+                        <size>0.05 0.05 0.74</size>
+                    </box>
+                </geometry>
+            </collision>
+            <visual>
+                <geometry>
+                    <box>
+                        <size>0.05 0.05 0.74</size>
+                    </box>
+                </geometry>
+            </visual>
+        </link>
+        <link name="leg_4">
+            <pose>0.55 0.35 0.37 0 0 0</pose>
+            <collision>
+                <geometry>
+                    <box>
+                        <size>0.05 0.05 0.74</size>
+                    </box>
+                </geometry>
+            </collision>
+            <visual>
+                <geometry>
+                    <box>
+                        <size>0.05 0.05 0.74</size>
+                    </box>
+                </geometry>
+            </visual>
+        </link>
+        <color>
+            <red>0.8</red>
+            <green>0.8</green>
+            <blue>0.8</blue>
+        </color>
+        <areas>
+            <name>near</name>
+            <offset>0.7</offset>
+        </areas>
+        <areas>
+            <name>in_front_of</name>
+            <shape>
+                <box>
+                    <min>
+                        <x>0.6</x>
+                        <y>-0.3</y>
+                        <z>0</z>
+                    </min>
+                    <max>
+                        <x>1.2</x>
+                        <y>0.3</y>
+                        <z>0.01</z>
+                    </max>
+                </box>
+            </shape>
+        </areas>
+        <areas>
+            <name>on_top_of</name>
+            <shape>
+                <box>
+                    <min>
+                        <x>-0.6</x>
+                        <y>-0.4</y>
+                        <z>0.78</z>
+                    </min>
+                    <max>
+                        <x>0.6</x>
+                        <y>0.4</y>
+                        <z>1.2</z>
+                    </max>
+                </box>
+            </shape>
+        </areas>
+        <areas>
+            <name>under</name>
+            <shape>
+                <box>
+                    <min>
+                        <x>-0.54</x>
+                        <y>-0.34</y>
+                        <z>0.01</z>
+                    </min>
+                    <max>
+                        <x>0.54</x>
+                        <y>0.34</y>
+                        <z>0.5</z>
+                    </max>
+                </box>
+            </shape>
+        </areas>
+    </model>
+</sdf>
