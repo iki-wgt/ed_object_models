@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
 <sdf version="1.5">
-  <!-- The model name should be a string with the same value as the name in model.config. -->
+  <!-- 
+  The model name should be a string with the same value as the name in model.config.
+  -->
   <model name="robotics_testlabs_sdf/heightmap_test">
     <static>true</static>
     <link name="link">
@@ -8,12 +10,12 @@
         <geometry>
           <heightmap>
             <!-- 
-            The uri should refer to a square greyscale png of side length 2^n+1, such as 129, 257 or 513. 
-            White (255) corresponds to the full height and black (0) to zero height.
+            The uri should refer to a square greyscale png of side length 2^n+1, such as 129, 257, 513.
+            White corresponds to the full height and black to zero height.
             -->
             <uri>model://robotics_testlabs_sdf/heightmap_test/heightmap.png</uri>
-            <size>8 5 3</size> <!-- Width, depth and height of the heightmap in world units. -->
-            <pos>0 0 1</pos> <!-- Position of the center of the heightmap in world units. -->
+            <size>8 5 3</size>  <!-- Width, depth and height of the heightmap in world units. -->
+            <pos>0 0 0</pos>  <!-- Position of the center of the heightmap in world units. -->
           </heightmap>
         </geometry>
       </collision>
@@ -22,14 +24,19 @@
           <heightmap>
             <use_terrain_paging>false</use_terrain_paging>
             <texture>
-              <!-- Replaces the default stripped black and yellow texture of gazebo with a solid grey color. -->
-              <diffuse>model://robotics_testlabs_sdf/grey.png</diffuse>
-              <normal>model://robotics_testlabs_sdf/normal.png</normal>
+              <!-- 
+              Replace the default stripped black and yellow texture of gazebo with a solid grey color.
+              -->
+              <diffuse>model://robotics_testlabs_sdf/Texture/grey.png</diffuse>
+              <normal>model://robotics_testlabs_sdf/Texture/normal.png</normal>
               <size>1</size>
             </texture>
-            <uri>model://robotics_testlabs_sdf/heightmap_test/heightmap.png</uri> <!-- Same as heightmap uri above -->
-            <size>8 5 3</size> <!-- Same as heightmap size above -->
-            <pos>0 0 1</pos> <!-- Same as heightmap pos above -->
+            <!--
+            The uri, size and pos should be the same as in the heightmap from collision above.
+            -->
+            <uri>model://robotics_testlabs_sdf/heightmap_test/heightmap.png</uri>
+            <size>8 5 3</size>
+            <pos>0 0 0</pos>
           </heightmap>
         </geometry>
       </visual>
