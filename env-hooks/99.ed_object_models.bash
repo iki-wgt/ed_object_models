@@ -15,7 +15,7 @@ function ed_object_models_setup {
     fi
 
     model_paths_string="$(find $model_path -type f -name '*model.sdf' -printf '%h:')"
-    if [ -z $model_paths_string ]
+    if [ -n $model_paths_string ]
     then
         export GAZEBO_MODEL_PATH="${model_paths_string}${GAZEBO_MODEL_PATH}"
         export GAZEBO_RESOURCE_PATH="${model_paths_string}${GAZEBO_RESOURCE_PATH}"
