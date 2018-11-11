@@ -14,7 +14,16 @@ function ed_object_models_setup {
         export GAZEBO_RESOURCE_PATH=$model_path:$GAZEBO_RESOURCE_PATH
     fi
 
-    model_paths_string="$(find $model_path -type f -name '*model.sdf' -printf '%h:')"
+    local model_paths="$(find $model_path -type f -name '*model.sdf' | xargs dirname | xargs dirname)"
+    local model_paths_string=""
+    for dir in $model_paths
+    do
+        if [[ "$dir" != *"$model_path/"* || "$dir" != *"$model_paths_string"* ]]
+        then
+            continue
+        fi
+        model_paths_string="$dir:$model_paths_string"
+    done
     if [ -n $model_paths_string ]
     then
         export GAZEBO_MODEL_PATH="${model_paths_string}${GAZEBO_MODEL_PATH}"
