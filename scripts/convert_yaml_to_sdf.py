@@ -77,15 +77,18 @@ def read_geometry(shape_item):
     visual/collision/virtual_area
     :param shape_item: dict with shape description
     :type shape_item: dict
-    :return: tuple of geometry and super_pose
+    :return: tuple of geometry, link_pose and geometry_pose
     :rtype: tuple
     """
     geometry = {}
-    super_pose = None
+    link_pose = read_pose(shape_item)
+    geometry_pose = None
 
     if "cylinder" in shape_item:
         yml_cylinder = shape_item["cylinder"]
         geometry["cylinder"] = {"radius": yml_cylinder["radius"], "length": yml_cylinder["height"]}
+        if "pose" in yml_cylinder:
+            link_pose = read_pose(yml_cylinder)
 
     elif "box" in shape_item:
         yml_box = shape_item["box"]
@@ -106,12 +109,15 @@ def read_geometry(shape_item):
             pos_x = yml_box_min["x"] + float(size_x)/2
             pos_y = yml_box_min["y"] + float(size_y)/2
             pos_z = yml_box_min["z"] + float(size_z)/2
-            box_pose_list = [pos_x, pos_y, pos_z]
-            super_pose = " ".join(map(str, box_pose_list))
+            box_pose_list = [pos_x, pos_y, pos_z, 0, 0, 0]
+            geometry_pose = " ".join(map(str, box_pose_list))
 
             geometry["box"] = {"size": box_size}
 
-    return geometry, super_pose
+        if "pose" in yml_box:
+            link_pose = read_pose(yml_box)
+
+    return geometry, link_pose, geometry_pose
 
 
 def read_shape_item(shape_item, link_names, color):
@@ -136,20 +142,20 @@ def read_shape_item(shape_item, link_names, color):
     name = unique_name(name, link_names)
     sdf_link_item["name"] = name
 
-    geometry, super_pose = read_geometry(shape_item)
+    geometry, link_pose, geometry_pose = read_geometry(shape_item)
 
     # Maybe have a default name for collision and visual instead of link name
     sdf_link_item["collision"] = {"name": name, "geometry": geometry}
     sdf_link_item["visual"] = {"name": name, "geometry": geometry}
-    if super_pose:
-        sdf_link_item["collision"]["pose"] = super_pose
-        sdf_link_item["visual"]["pose"] = super_pose
+    if geometry_pose:
+        sdf_link_item["collision"]["pose"] = geometry_pose
+        sdf_link_item["visual"]["pose"] = geometry_pose
     if color:
         color_str = " ".join(map(str, color.values()+[1]))
         sdf_link_item["visual"]["material"] = {"ambient": color_str}
 
     # pose
-    sdf_link_item["pose"] = read_pose(shape_item)
+    sdf_link_item["pose"] = link_pose
 
     return sdf_link_item
 
@@ -204,11 +210,11 @@ def read_areas(areas, link_names):
         sdf_link_item = {"name": uname}
 
         for shape_item in area["shape"]:
-            geometry, super_pose = read_geometry(shape_item)
+            geometry, link_pose, geometry_pose = read_geometry(shape_item)
             shape_name = unique_name(uname, area_names)
             sdf_link_item["virtual_area"] = {"name": shape_name, "geometry": geometry}
-            if super_pose:
-                sdf_link_item["virtual_area"]["pose"] = super_pose
+            if geometry_pose:
+                sdf_link_item["virtual_area"]["pose"] = geometry_pose
 
             sdf_link.append(sdf_link_item)
 
@@ -248,7 +254,6 @@ def parse_to_xml(xml, item, list_name=""):
         xml.text = str(item)
     else:
         print("Cannot not parse object type: '{}'".format(type(item)))
-        print item
 
 
 def write_xml_to_file(xml_element, path):
@@ -362,6 +367,7 @@ def main(model_name, recursive=False):
     model_config_path = os.path.dirname(model_path) + "/model.config"
     write_xml_to_file(config_root, model_config_path)
 
+    print("Successfully converted model '{}' to SDF".format(model_name))
     return 0
 
 
