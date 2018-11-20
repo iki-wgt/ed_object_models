@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<sdf version="1.5">
+  <!-- 
+  The model name should be a string with the same value as the name in model.config.
+  -->
+  <model name="test_sdf/heightmap_walls">
+    <static>true</static>
+    <link name="link">
+      <collision name="walls">
+        <geometry>
+          <heightmap>
+            <!-- 
+            The uri should refer to a square greyscale png of side length 2^n+1, such as 129, 257, 513.
+            White corresponds to the full height and black to zero height.
+            To keep a precision of 2.5cm/pixel:
+            129: 3.225
+            257: 6.425
+            513: 12.825
+            1025: 25.625
+            2049: 51.225
+            -->
+            <uri>model://test_sdf/heightmap_walls/roboticslab_walls.png</uri>
+            <size>25.625 25.625 2</size>  <!-- Width, depth and height of the heightmap in world units. -->
+            <pos>0 0 0</pos>  <!-- Position of the center of the heightmap in world units. -->
+          </heightmap>
+        </geometry>
+      </collision>
+      <visual name="walls">
+        <geometry>
+          <heightmap>
+            <use_terrain_paging>false</use_terrain_paging>
+            <texture>
+              <!-- 
+              Replace the default stripped black and yellow texture of gazebo with a solid grey color.
+              -->
+              <diffuse>file://media/materials/textures/grey.png</diffuse>
+              <normal>file://media/materials/textures/normal.png</normal>
+              <size>1</size>
+            </texture>
+            <!--
+            The uri, size and pos should be the same as in the heightmap from collision above.
+            -->
+            <uri>model://test_sdf/heightmap_walls/roboticslab_walls.png</uri>
+            <size>25.625 25.625 2</size>
+            <pos>0 0 0</pos>
+          </heightmap>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>
