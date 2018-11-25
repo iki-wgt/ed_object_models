@@ -21,7 +21,7 @@
             -->
             <uri>model://test_sdf/heightmap_walls/roboticslab_walls.png</uri>
             <size>25.625 25.625 2</size>  <!-- Width, depth and height of the heightmap in world units. -->
-            <pos>0 0 0</pos>  <!-- Position of the center of the heightmap in world units. -->
+            <pos>3.5 2.5 0</pos>  <!-- Position of the center of the heightmap in world units. -->
           </heightmap>
         </geometry>
       </collision>
@@ -42,7 +42,7 @@
             -->
             <uri>model://test_sdf/heightmap_walls/roboticslab_walls.png</uri>
             <size>25.625 25.625 2</size>
-            <pos>0 0 0</pos>
+            <pos>3.5 2.5 0</pos>
           </heightmap>
         </geometry>
       </visual>
