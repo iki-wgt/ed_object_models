@@ -1,2 +1,12 @@
 shape:
-    path: shape/shape.xml
+    compound:
+    -   box:
+            '#': floor
+            pose:
+                x: 0
+                y: 0
+                z: -0.01
+            size:
+                x: 200
+                y: 200
+                z: 0.02

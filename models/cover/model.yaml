@@ -8,7 +8,7 @@ composition:
   - id: wall
     pose: {x: 0.0, y: 0.0, z: 0}
     type: cover/walls
-  - type: expedit
+  - type: expedit/cabinet
     id: expedit
     pose:
         x: 1.495
@@ -17,7 +17,7 @@ composition:
         X: 0.0
         Y: 0.0
         Z: 1.57
-  - type: expedit.door
+  - type: expedit/door
     id: expedit_door_left
     pose:
         x: 1.3175
